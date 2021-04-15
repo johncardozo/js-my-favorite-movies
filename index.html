@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies</title>
+
+    <!-- CDN Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" defer></script>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Javascript module -->
+    <script type="module" src="js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>My favorite movies</h1>
+            <hr>
+            <form>
+                <div>
+                    <label for="titleText">Title</label>
+                    <input type="text" id="titleText">
+                </div>
+                <div>
+                    <label for="Year">Year</label>
+                    <input type="number" id="yearText">
+                </div>
+                <button>Add movie</button>
+            </form>
+            <h2>List of movies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
